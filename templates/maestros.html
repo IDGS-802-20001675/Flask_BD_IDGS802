@@ -1,0 +1,18 @@
+{% extends 'layout2.html' %}
+
+{% import "_macros.html" as macros %}
+
+{% block content %}
+<h1>Alumnos</h1>
+<form action="" method="POST" novalidate>
+    {{ form.csrf_token }}
+    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
+    {{ macros.input_Form(form.nombre) }}
+    {{ macros.input_Form(form.email) }}
+    {{ macros.input_Form(form.apaterno) }}
+    <input type="submit" name="btn1">
+</form>
+<h1>Nombre: {{ nom }}</h1>
+<h1>apaterno: {{ apa }}</h1>
+<h1>correo: {{ c }}</h1>
+{% endblock %}

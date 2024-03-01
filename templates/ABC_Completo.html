@@ -23,10 +23,12 @@
             <th>{{alum.nombre}}</th>
             <th>{{alum.apaterno}}</th>
             <th>{{alum.email}}</th>
-            <th><a href="eliminar.html?id={{alum.id}}"
+            <th><a href="/eliminar?id={{alum.id}}"
                 class="btn btn-danger">Eliminar</a></th>
-            <th><a href="modificar.html?id={{alum.id}}"
-                class="btn btn-warning">Modificar</a></th>
+           <!--- <th><a href="modificar.html?id={{alum.id}}"
+                class="btn btn-warning">Modificar</a></th>-->
+                <th><a href="/modificar?id={{alum.id}}"
+                    class="btn btn-warning">Modificar</a></th>
         </tr>
        {%endfor%}
     </tbody>
